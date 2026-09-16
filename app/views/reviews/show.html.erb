@@ -1,0 +1,15 @@
+<h1><%= @review.title %></h1>
+
+<% if @review.image.attached? %>
+  <div>
+    <%= image_tag @review.image, style: "max-width: 300px;" %>
+  </div>
+<% end %>
+
+<p><strong>著者:</strong> <%= @review.author %></p>
+<p><strong>評価:</strong> <%= @review.rating %></p>
+<p><strong>感想:</strong><br> <%= @review.body %></p>
+
+<%= link_to '編集する', edit_review_path(@review) %> |
+<%= link_to '削除する', @review, data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } %> |
+<%= link_to '一覧に戻る', reviews_path %>

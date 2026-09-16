@@ -1,0 +1,126 @@
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSSa7TDEnTttnw3btcX7XA4aZ4R9ej0nKmgRrKScUEqSSJWkrZfcdv8C2KnwkuRfaP8fLS6g52iQhFmwjc');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.reviews-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.review-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.review-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
+  
+  border-radius: 16px; 
+  padding: 40px;
+  width: 100%;
+  max-width: 650px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+  box-sizing: border-box;
+  
+  text-align: center; 
+}
+
+.site-title a {
+  color: #5c4033;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+.site-title {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e6d3c3;
+  padding-bottom: 10px;
+}
+
+form, ul {
+  display: inline-block;
+  text-align: left; 
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+input[type="text"], textarea, input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.content-container a {
+  color: #8c6239;
+}
+input[type="submit"], button {
+  background-color: #8c6239;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+input[type="submit"]:hover {
+  background-color: #6d4c2a;
+}
+
+.notice {
+  color: #3e8e41;
+  background-color: #e8f5e9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  box-sizing: border-box;
+}

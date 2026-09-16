@@ -1,0 +1,33 @@
+<%= form_with(model: review) do |form| %>
+  <% if review.errors.any? %>
+    <div style="color: red; background-color: #fdd; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
+      <% review.errors.full_messages.each do |message| %>
+        <p style="margin: 0;"><%= message %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, "本のタイトル" %><br>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :author, "著者名" %><br>
+    <%= form.text_field :author %>
+  </div>
+  <div>
+    <%= form.label :rating, "評価 (1〜5)" %><br>
+    <%= form.number_field :rating, in: 1..5 %>
+  </div>
+  <div>
+    <%= form.label :body, "感想" %><br>
+    <%= form.text_area :body %>
+  </div>
+  <div>
+    <%= form.label :image, "本の表紙（画像）" %><br>
+    <%= form.file_field :image, accept: "image/*" %>
+  </div>
+  <div>
+    <%= form.submit "保存する" %>
+  </div>
+<% end %>
